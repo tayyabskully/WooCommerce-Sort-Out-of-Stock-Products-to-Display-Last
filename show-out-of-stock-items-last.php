@@ -1,3 +1,4 @@
+<?php
 function custom_product_query( $clauses, $query ) {
     global $wpdb;
 
@@ -17,3 +18,4 @@ function custom_product_query( $clauses, $query ) {
 }
 
 add_filter( 'posts_clauses', 'custom_product_query', 10, 2 );
+?>
